@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=financial_dashboard'
+      - 'POSTGRES_PASSWORD=abc123'
+      - 'POSTGRES_USER=financial'
+    ports:
+      - '5432'
